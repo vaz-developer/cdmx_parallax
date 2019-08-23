@@ -15,6 +15,10 @@ body {
   margin-top: 6rem;
 }
 
+.mt-12 {
+  margin-top: 12rem;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -122,20 +126,81 @@ body {
 
 #section2 {
   width: 100%;
-  height: 100vh;
   color: #ffffff;
   position: absolute;
   z-index: 1;
   background-color: #566378;
 }
-#section2 p {
+#section2 .text-intro {
   width: 60%;
   font-size: 25px;
   font-weight: 300;
 }
-#section2 h2 {
-  font-size: 20px;
-  color: red;
+
+.img-topic {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+.img-topic > div {
+  width: 1024px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.img-topic div > img {
+  width: 445px;
+}
+
+.img-margin {
+  margin: 3rem 2rem 3rem 2rem;
+}
+
+.text-img1 {
+  text-align: center;
+  font-family: "ARESSENCE";
+  font-size: 46px;
+  width: 218px;
+  letter-spacing: 2px;
+  line-height: 1.27;
+  margin: -36px auto;
+}
+
+.text-img2 {
+  text-align: center;
+  font-family: "ARESSENCE";
+  font-size: 46px;
+  width: 218px;
+  letter-spacing: 2px;
+  line-height: 1.27;
+  margin: -36px auto;
+}
+
+.text-img3 {
+  text-align: center;
+  font-family: "ARESSENCE";
+  font-size: 46px;
+  width: 218px;
+  letter-spacing: 2px;
+  line-height: 1.27;
+  margin: -36px auto;
+}
+
+.text-img4 {
+  text-align: center;
+  font-family: "ARESSENCE";
+  font-size: 46px;
+  width: 218px;
+  letter-spacing: 2px;
+  line-height: 1.27;
+  margin: -36px auto;
 }
 
 /*# sourceMappingURL=main.css.map */
