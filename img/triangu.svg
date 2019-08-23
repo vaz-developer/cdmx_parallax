@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="triangu" width="157.175" height="169.701" viewBox="0 0 157.175 169.701">
+    <defs>
+        <style>
+            .cls-1{fill:#78abbf}.cls-2{fill:#cc7845}
+        </style>
+    </defs>
+    <path id="Polígono_1" d="M67.422 0l67.422 80.805H0z" class="cls-1" data-name="Polígono 1" transform="rotate(148 64.5 71.66)"/>
+    <circle id="Elipse_2" cx="26.514" cy="26.514" r="26.514" class="cls-2" data-name="Elipse 2" transform="rotate(-32 50.28 9.56)"/>
+</svg>

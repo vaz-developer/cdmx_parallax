@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: "Roboto";
   font-weight: 400;
+  background-color: #566378;
 }
 
 .mt-4 {
@@ -54,6 +55,7 @@ body {
 .content-section1,
 .content-section2,
 .img-topic,
+.flex-card,
 footer {
   display: -webkit-box;
   display: -moz-box;
@@ -172,6 +174,27 @@ footer {
   letter-spacing: 2px;
   line-height: 1.27;
   margin: -36px auto;
+}
+
+.card {
+  width: 947px;
+  height: 1483px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.card figure {
+  overflow: hidden;
+  height: 278px;
+  margin: 3rem 3rem 20px 3rem;
+  border-radius: 8px;
+}
+.card figure img {
+  display: block;
+  width: 100%;
+  margin: -11.875% 0;
+}
+.card .bread {
+  margin: auto 3rem;
 }
 
 footer {
