@@ -100,7 +100,7 @@ body{
 .mount {
     position: absolute;
     width: 100%;
-    top: 33rem;
+    top: 37rem;
     left: 0;
     z-index: 1;
 }
@@ -126,10 +126,11 @@ body{
     position: absolute;
     z-index: 1;
     background-color: #566378;
+
     p {
-        text-align: center;
+        width: 60%;
+        font-size: 25px;
         font-weight: 300;
-        width: 70%;
     }
     h2 {
         font-size: 20px;
