@@ -13,6 +13,9 @@ body{
     font-family: 'Roboto';
     font-weight: 400;
 }
+.mt-4 {
+    margin-top: 4rem;
+}
 .mt-6 {
     margin-top: 6rem;
 }
@@ -48,7 +51,9 @@ body{
     }
 }
 .content-section1,
-.content-section2 {
+.content-section2, 
+.img-topic,
+footer {
     display: -webkit-box; 
     display: -moz-box;
     display: -ms-flexbox;
@@ -99,7 +104,6 @@ body{
         z-index: 1;
     }
 }
-
 .mount {
     position: absolute;
     width: 100%;
@@ -114,7 +118,7 @@ body{
     width: 100%;
     z-index: 2;
 }
-.crowd-bg {
+.sky-bg {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -135,12 +139,6 @@ body{
     }
 }
 .img-topic {
-    display: -webkit-box; 
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex; 
-    display: flex;
-    justify-content: center;
 
     & > div {
         width: 1024px;
@@ -161,33 +159,9 @@ body{
 .img-margin {
     margin: 3rem 2rem 3rem 2rem;
 }
-.text-img1 {
-    text-align: center;
-    font-family: 'ARESSENCE';
-    font-size: 46px;
-    width: 218px;
-    letter-spacing: 2px;
-    line-height: 1.27;
-    margin: -36px auto;
-}
-.text-img2 {
-    text-align: center;
-    font-family: 'ARESSENCE';
-    font-size: 46px;
-    width: 218px;
-    letter-spacing: 2px;
-    line-height: 1.27;
-    margin: -36px auto;
-}
-.text-img3 {
-    text-align: center;
-    font-family: 'ARESSENCE';
-    font-size: 46px;
-    width: 218px;
-    letter-spacing: 2px;
-    line-height: 1.27;
-    margin: -36px auto;
-}
+.text-img1,
+.text-img2,
+.text-img3,
 .text-img4 {
     text-align: center;
     font-family: 'ARESSENCE';
@@ -196,4 +170,9 @@ body{
     letter-spacing: 2px;
     line-height: 1.27;
     margin: -36px auto;
+}
+footer {
+    width: 100%;
+    height: 55px;
+    background-color: #7a8dab;
 }
