@@ -10,34 +10,50 @@
 
     <!--STYLES -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
 </head>
 <body>
-    <section id="section1">
-        <nav class="navbar">
-            <span>
-                <img class="img-logo_s" src="img/logo.png" alt="">
-            </span>
-            <span class="img-social_s">
-                <img src="img/facebook.svg" alt="">
-                <img src="img/twitter.svg" alt="">
-                <img src="img/instagram.svg" alt="">
-            </span>
-        </nav>
+    <section id="section1" class="target2">
+        <!-- Back to top button -->
+    <a id="button2"></a>
+        <div class="navbar-fixed">
+            <nav class="fix-navbar nav-extended">
+                <div class="nav-wrapper margin-navbar">
+                    <a href="#" class="brand-logo">
+                        <img class="img-logo_s" src="img/logo.png" alt="">
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <img class="menu-bar" src="img/menu2.png" alt="">
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#"><img class="img-social_1" src="img/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img class="img-social_2" src="img/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img class="img-social_2" src="img/instagram.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a class="sidenav-close pointer">X</a></li>
+                <li><a href="sass.html"><img src="img/facebook.svg" alt=""></a></li>
+                <li><a href="badges.html"><img src="img/twitter.svg" alt=""></a></li>
+                <li><a href="collapsible.html"><img src="img/instagram.svg" alt=""></a></li>
+            </ul>
+        </div>
         <div class="content-section1 mt-6">
             <h1>CIUDAD DE MÉXICO</h1>
             <p>¡Ven y descubre la CDMX!</p>
-            <a class="button-section1" href="#here">Conocer más</a>
+            <a class="button-section1" id="button1">Conocer más</a>
         </div>
         <img class="palace rellax" src="img/palace.png" alt="" data-rellax-speed="5" >
         <img class="mount rellax" src="img/mount.png" alt="" data-rellax-speed="2" data-rellax-percentage="-.9">
         <img class="sky-bg rellax" src="img/bg-sky.jpg" alt="" data-rellax-speed="1" >
     </section> 
 
-    <section id="section2">
-        <div class="content-section2 mt-12">
+    <section id="section2" class="target">
+        <div class="content-section2 mt-6">
             <p class="text-intro">Sean todos bienvenidos a la Ciudad de México, a continuación te damos algunas recomendaciones si es tu primera vez que visitas esta hermosa ciudad:</p>
         </div>
-        <div class="img-topic">
+        <div class="img-topic" data-scroll>
             <div>
                 <div class="img-margin">
                     <img src="../img/bandera.png" alt="">
@@ -62,18 +78,90 @@
         </footer>
     </section>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="node_modules/scroll-out/dist/scroll-out.min.js"></script>
     <script type="text/javascript" src="js/rellax.min.js"></script>
     <script>
-
-        var rellax = new Rellax('.rellax');
-
-    	// var rellax = new Rellax('.rellax', {
-        // // center: true
-        // callback: function(position) {
-        //     // callback every position change
-        //     console.log(position);
-        //     }
+        // $(document).ready(function() {
+        //     $('.menu-bar').click(function () {
+        //         $('.sub-menu').slideToggle("swing");
+        //     });
+        //     $('#close').click(function () {
+        //         $('.sub-menu').slideToggle("swing");
+        //     });
         // });
+
+    /* $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>-10) {
+                $('nav').addClass('.nav-bar_color');
+            } else {
+                $('nav').removeClass('.nav-bar_color');
+            }
+        });
+    }); */
+    $(document).ready(function(){
+        $(window).bind('scroll', function() {
+            var navHeight = $( window ).height() - 70;
+            if ($(window).scrollTop() > navHeight) {
+                $('nav').addClass('nav-bar_color');
+                $('.navbar-fixed').removeClass('z-less');
+            }
+            else {
+                $('nav').removeClass('nav-bar_color');
+                $('.navbar-fixed').addClass('z-less');
+            }
+        });
+    });
+
+    var btn = $('#button2');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+    
+
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    
+
+        //var rellax = new Rellax('.rellax');
+
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+            }
+        });
+    </script>
+    <script type="module">
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+
+        var button1 = document.getElementById('button1');
+        var button2 = document.getElementById('button2');
+
+        button1.addEventListener('click', () => {
+            jump('.target', {
+                duration: 2000
+            });
+        });
+
+        button2.addEventListener('click', () => {
+            jump('.target2', {
+                duration: 2000
+            });
+        });
+    
+    </script>
+    <script>
+            ScrollOut();
     </script>
 </body>
 </html>
