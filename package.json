@@ -1,0 +1,32 @@
+{
+  "name": "cdmx_parallax",
+  "version": "1.0.0",
+  "description": "project about parallax in landing",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "materialize": "^1.0.0",
+    "jquery": "^3.4.1",
+    "sass": "^1.22.10",
+    "jump.js": "^1.0.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "scroll-out": "^2.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaz-developer/cdmx_parallax.git"
+  },
+  "keywords": [
+    "cdmx"
+  ],
+  "author": "evelyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaz-developer/cdmx_parallax/issues"
+  },
+  "homepage": "https://github.com/vaz-developer/cdmx_parallax#readme"
+}
