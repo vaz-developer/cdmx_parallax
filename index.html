@@ -15,7 +15,7 @@
 <body>
     <section id="section1" class="target2">
         <!-- Back to top button -->
-    <a id="button2"></a>
+        <a id="button2"></a>
         <div class="navbar-fixed">
             <nav class="fix-navbar nav-extended">
                 <div class="nav-wrapper margin-navbar">
@@ -34,9 +34,9 @@
             </nav>
             <ul class="sidenav" id="mobile-demo">
                 <li><a class="sidenav-close pointer">X</a></li>
-                <li><a href="sass.html"><img src="img/facebook.svg" alt=""></a></li>
-                <li><a href="badges.html"><img src="img/twitter.svg" alt=""></a></li>
-                <li><a href="collapsible.html"><img src="img/instagram.svg" alt=""></a></li>
+                <li><a href="sass.html"><img class="img-social_1" src="img/facebook.svg" alt=""></a></li>
+                <li><a href="badges.html"><img class="img-social_2" src="img/twitter.svg" alt=""></a></li>
+                <li><a href="collapsible.html"><img class="img-social_2" src="img/instagram.svg" alt=""></a></li>
             </ul>
         </div>
         <div class="content-section1 mt-6">
@@ -44,13 +44,13 @@
             <p>¡Ven y descubre la CDMX!</p>
             <a class="button-section1" id="button1">Conocer más</a>
         </div>
-        <img class="palace rellax" src="img/palace.png" alt="" data-rellax-speed="5" >
-        <img class="mount rellax" src="img/mount.png" alt="" data-rellax-speed="2" data-rellax-percentage="-.9">
+        <img class="palace rellax" src="img/palace-low.png" alt="" data-rellax-speed="5" >
+        <img class="mount rellax" src="img/mount-low.png" alt="" data-rellax-speed="2" data-rellax-percentage="-.9">
         <img class="sky-bg rellax" src="img/bg-sky.jpg" alt="" data-rellax-speed="1" >
     </section> 
 
     <section id="section2" class="target">
-        <div class="content-section2 mt-6">
+        <div class="content-section2 mt-12">
             <p class="text-intro">Sean todos bienvenidos a la Ciudad de México, a continuación te damos algunas recomendaciones si es tu primera vez que visitas esta hermosa ciudad:</p>
         </div>
         <div class="img-topic" data-scroll>
@@ -101,6 +101,7 @@
             }
         });
     }); */
+    //NAVBAR SCROLL
     $(document).ready(function(){
         $(window).bind('scroll', function() {
             var navHeight = $( window ).height() - 70;
@@ -115,31 +116,33 @@
         });
     });
 
+    //BUTTON UP
     var btn = $('#button2');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
     
+    //MENU MOBILE - SIDENAV NAVEGATION
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
 
-        $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-    
+    //SCROLL OUT JS
+    ScrollOut();
 
-        //var rellax = new Rellax('.rellax');
-
-    	var rellax = new Rellax('.rellax', {
+    //RELLAX JS
+    //var rellax = new Rellax('.rellax');
+    var rellax = new Rellax('.rellax', {
         // center: true
         callback: function(position) {
             // callback every position change
             console.log(position);
-            }
-        });
+        }
+    });
     </script>
     <script type="module">
         import jump from './node_modules/jump.js/dist/jump.module.js';
@@ -158,10 +161,6 @@ $(window).scroll(function() {
                 duration: 2000
             });
         });
-    
-    </script>
-    <script>
-            ScrollOut();
     </script>
 </body>
 </html>

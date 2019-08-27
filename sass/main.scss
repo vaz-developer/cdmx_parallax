@@ -174,11 +174,11 @@ footer {
 }
 [data-scroll="in"] {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 [data-scroll="out"] {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateX(-50px);
 }
 #section2 {
     width: 100%;
