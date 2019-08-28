@@ -13,6 +13,9 @@ body{
     font-weight: 400;
     background-color: #566378;
 }
+.white-color {
+    color: #ffffff;
+}
 #button2 {
     display: inline-block;
     background-color: #FF9800;
@@ -29,7 +32,7 @@ body{
     visibility: hidden;
     z-index: 1000;
 }
-  #button2::after {
+#button2::after {
     content: "\8593";
     font-weight: normal;
     font-style: normal;
@@ -37,14 +40,14 @@ body{
     line-height: 50px;
     color: #fff;
 }
-  #button2:hover {
+#button2:hover {
     cursor: pointer;
     background-color: #333;
 }
-  #button2:active {
+#button2:active {
     background-color: #555;
 }
-  #button2.show {
+#button2.show {
     opacity: 1;
     visibility: visible;
 }
@@ -128,14 +131,20 @@ footer>p {
         z-index: 1;
     }
 }
+.sidenav {
+    right: 0 !important;
+}
 .sidenav-overlay {
     z-index: 5 !important;
 }
 .sidenav {
     z-index: 6 !important;
 }
-.z-less {
+.navbar_z-less {
     z-index: 1 !important;
+}
+.navbar_z-more {
+    z-index: 2 !important;
 }
 .fix-navbar {
     z-index: 1;

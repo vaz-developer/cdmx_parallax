@@ -13,16 +13,29 @@
 </head>
 <body>
     <section>
-        <nav class="navbar">
-            <span>
-                <img class="img-logo_s" src="img/logo.png" alt="">
-            </span>
-            <span class="img-social_s">
-                <img src="img/facebook.svg" alt="">
-                <img src="img/twitter.svg" alt="">
-                <img src="img/instagram.svg" alt="">
-            </span>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="fix-navbar nav-extended">
+                <div class="nav-wrapper margin-navbar">
+                    <a href="#" class="brand-logo left">
+                        <img class="img-logo_s" src="img/logo.png" alt="">
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#"><img class="img-social_1" src="img/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img class="img-social_2" src="img/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img class="img-social_2" src="img/instagram.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a class="sidenav-close pointer">X</a></li>
+                <li><a href="sass.html"><img class="img-social_1" src="img/facebook.svg" alt="">face</a></li>
+                <li><a href="badges.html"><img class="img-social_2" src="img/twitter.svg" alt="">twitter</a></li>
+                <li><a href="collapsible.html"><img class="img-social_2" src="img/instagram.svg" alt="">instagra</a></li>
+            </ul>
+        </div>
         <div class="flex-card">
             <div class="card">
                 <figure>

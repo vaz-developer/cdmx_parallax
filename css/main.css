@@ -13,6 +13,10 @@ body {
   background-color: #566378;
 }
 
+.white-color {
+  color: #ffffff;
+}
+
 #button2 {
   display: inline-block;
   background-color: #FF9800;
@@ -138,6 +142,10 @@ footer > p {
   z-index: 1;
 }
 
+.sidenav {
+  right: 0 !important;
+}
+
 .sidenav-overlay {
   z-index: 5 !important;
 }
@@ -146,8 +154,12 @@ footer > p {
   z-index: 6 !important;
 }
 
-.z-less {
+.navbar_z-less {
   z-index: 1 !important;
+}
+
+.navbar_z-more {
+  z-index: 2 !important;
 }
 
 .fix-navbar {

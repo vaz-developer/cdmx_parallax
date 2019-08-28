@@ -33,6 +33,7 @@
                     </ul>
                 </div>
             </nav>
+        </div>
             <ul class="sidenav" id="mobile-demo">
                 <li><a class="sidenav-close pointer">X</a></li>
                 <li><a href="sass.html"><img class="img-social_1" src="img/facebook.svg" alt="">face</a></li>
@@ -40,6 +41,7 @@
                 <li><a href="collapsible.html"><img class="img-social_2" src="img/instagram.svg" alt="">instagra</a></li>
             </ul>
         </div>
+        
         <div class="content-section1 mt-1">
             <h1>CIUDAD DE MÉXICO</h1>
             <p>¡Ven y descubre la CDMX!</p>
@@ -58,19 +60,27 @@
             <div>
                 <div class="img-margin">
                     <img src="img/bandera.png" alt="">
-                    <p class="text-img1">INFORMACIÓN BÁSICA</p>
+                    <p class="text-img1">   
+                        <a class="white-color" href="lan-1.html">INFORMACIÓN BÁSICA</a>
+                    </p>
                 </div>
                 <div class="img-margin">
                     <img src="img/walk.png" alt="">
-                    <p class="text-img2">COMO LLEGAR</p>
+                    <p class="text-img2">
+                        <a class="white-color" href="#">COMO LLEGAR</a>
+                    </p>
                 </div>
                 <div class="img-margin">
                     <img src="img/angel.png" alt="">
-                    <p class="text-img3">COMO MOVERSE</p>
+                    <p class="text-img3">
+                        <a class="white-color" href="#">COMO MOVERSE</a>
+                    </p>
                 </div>
                 <div class="img-margin">
                     <img src="img/event.png" alt="">
-                    <p class="text-img4">PRÓXIMOS EVENTOS</p>
+                    <p class="text-img4">
+                        <a class="white-color" href="#">PRÓXIMOS EVENTOS</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -108,11 +118,13 @@
             var navHeight = $( window ).height() - 70;
             if ($(window).scrollTop() > navHeight) {
                 $('nav').addClass('nav-bar_color');
-                $('.navbar-fixed').removeClass('z-less');
+                $('.navbar-fixed').removeClass('navbar_z-less');
+                $('.navbar-fixed').addClass('navbar_z-more');
             }
             else {
                 $('nav').removeClass('nav-bar_color');
-                $('.navbar-fixed').addClass('z-less');
+                $('.navbar-fixed').addClass('navbar_z-less');
+                $('.navbar-fixed').removeClass('navbar_z-more');
             }
         });
     });
