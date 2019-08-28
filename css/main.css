@@ -123,7 +123,13 @@ footer > p {
   margin-top: 11em;
   padding: 10px;
   box-shadow: 0px 0px 2px #3c3c3c;
-  background-color: #566378;
+  background-color: #79589F;
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, rgba(159, 88, 150, 0)), color-stop(1, rgba(159, 88, 150, 0.6)));
+  background-image: -o-linear-gradient(left bottom, rgba(159, 88, 150, 0) 0%, rgba(159, 88, 150, 0.6) 100%);
+  background-image: -moz-linear-gradient(left bottom, rgba(159, 88, 150, 0) 0%, rgba(159, 88, 150, 0.6) 100%);
+  background-image: -webkit-linear-gradient(left bottom, rgba(159, 88, 150, 0) 0%, rgba(159, 88, 150, 0.6) 100%);
+  background-image: -ms-linear-gradient(left bottom, rgba(159, 88, 150, 0) 0%, rgba(159, 88, 150, 0.6) 100%);
+  background-image: linear, to left bottom, rgba(159, 88, 150, 0) 0%, rgba(159, 88, 150, 0.6) 100%;
   border: none;
   border-radius: 0.5rem;
   font-size: 1em;
