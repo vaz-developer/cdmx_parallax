@@ -84,7 +84,7 @@ body {
 .content-section2,
 .img-topic,
 .flex-card,
-footer > p {
+.footer {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -284,7 +284,7 @@ footer > p {
 }
 
 .card-section {
-  width: 50%;
+  width: 70%;
   border-radius: 8px;
   background-color: #ffffff;
   margin-top: 7rem;
