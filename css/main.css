@@ -181,6 +181,10 @@ footer > p {
   margin-top: 15px;
 }
 
+.img-menu {
+  width: 43px;
+}
+
 .img-logo_s {
   width: 140px;
 }
@@ -279,39 +283,39 @@ footer > p {
   margin: -36px auto;
 }
 
-.card {
-  width: 947px;
+.card-section {
+  width: 50%;
   border-radius: 8px;
   background-color: #ffffff;
   margin-top: 7rem;
 }
-.card figure {
+.card-section figure {
   overflow: hidden;
   height: 278px;
   margin: 3rem 3rem 20px 3rem;
   border-radius: 8px;
 }
-.card figure .all-img_card {
+.card-section figure .all-img_card {
   display: block;
   width: 100%;
   border-radius: 8px;
 }
-.card figure .lan-1 {
+.card-section figure .lan-1 {
   margin: -11.875% 0;
 }
-.card figure .lan-2 {
+.card-section figure .lan-2 {
   margin: -30.875% 0;
 }
-.card figure .lan-3 {
+.card-section figure .lan-3 {
   margin: -40.875% 0;
 }
-.card figure .lan-4 {
+.card-section figure .lan-4 {
   margin: -44.875% 0;
 }
-.card figure .lan-5 {
+.card-section figure .lan-5 {
   margin: -17.875% 0;
 }
-.card .bread {
+.card-section .bread {
   margin: auto 3rem;
 }
 

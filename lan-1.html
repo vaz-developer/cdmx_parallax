@@ -6,38 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CDMX</title>
     <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 
     <!--STYLES -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
 </head>
 <body>
     <section>
-        <div class="navbar-fixed">
-            <nav class="fix-navbar nav-extended">
-                <div class="nav-wrapper margin-navbar">
-                    <a href="#" class="brand-logo left">
-                        <img class="img-logo_s" src="img/logo.png" alt="">
-                    </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#"><img class="img-social_1" src="img/facebook.svg" alt=""></a></li>
-                        <li><a href="#"><img class="img-social_2" src="img/twitter.svg" alt=""></a></li>
-                        <li><a href="#"><img class="img-social_2" src="img/instagram.svg" alt=""></a></li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="sidenav" id="mobile-demo">
-                <li><a class="sidenav-close pointer">X</a></li>
-                <li><a href="sass.html"><img class="img-social_1" src="img/facebook.svg" alt="">face</a></li>
-                <li><a href="badges.html"><img class="img-social_2" src="img/twitter.svg" alt="">twitter</a></li>
-                <li><a href="collapsible.html"><img class="img-social_2" src="img/instagram.svg" alt="">instagra</a></li>
-            </ul>
-        </div>
+        <!--NAVBAR-->
+        <nav class="fix-navbar nav-extended">
+            <div class="nav-wrapper margin-navbar">
+                <a href="#" class="brand-logo">
+                    <img class="img-logo_s" src="img/logo.png" alt="">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <img class="img-menu"src="img/menu2.png" alt="">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#"><img class="img-social_1" src="img/facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img class="img-social_2" src="img/twitter.svg" alt=""></a></li>
+                    <li><a href="#"><img class="img-social_2" src="img/instagram.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="#">
+                    <img class="img-social_1 mt-1" src="img/facebook-blue.svg" alt="">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="img-social_2 mt-1" src="img/twitter-blue.svg" alt="">
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="img-social_2 mt-1" src="img/instagram-blue.svg" alt="">
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
         <div class="flex-card">
-            <div class="card">
+            <div class="card-section">
                 <figure>
                         <img class="lan-1 all-img_card" src="img/inter/lan-1.jpg" alt="">
                 </figure>
@@ -70,18 +85,57 @@
         </footer>
     </section> 
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="node_modules/scroll-out/dist/scroll-out.min.js"></script>
     <script type="text/javascript" src="js/rellax.min.js"></script>
     <script>
 
-        var rellax = new Rellax('.rellax');
+    //BUTTON UP
+    var btn = $('#button2');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    
+    //MENU MOBILE - SIDENAV NAVEGATION
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
 
-    	// var rellax = new Rellax('.rellax', {
-        // // center: true
-        // callback: function(position) {
-        //     // callback every position change
-        //     console.log(position);
-        //     }
-        // });
+    //SCROLL OUT JS
+    ScrollOut();
+
+    //RELLAX JS
+    //var rellax = new Rellax('.rellax');
+    var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+    });
+    </script>
+    <script type="module">
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+
+        var button1 = document.getElementById('button1');
+        var button2 = document.getElementById('button2');
+
+        button1.addEventListener('click', () => {
+            jump('.target', {
+                duration: 2000
+            });
+        });
+
+        button2.addEventListener('click', () => {
+            jump('.target2', {
+                duration: 2000
+            });
+        });
     </script>
 </body>
 </html>

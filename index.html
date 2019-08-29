@@ -17,6 +17,7 @@
     <section id="section1" class="target2">
         <!-- Back to top button -->
         <a id="button2"></a>
+        <!--NAVBAR-->
         <div class="navbar-fixed">
             <nav class="fix-navbar nav-extended">
                 <div class="nav-wrapper margin-navbar">
@@ -24,7 +25,7 @@
                         <img class="img-logo_s" src="img/logo.png" alt="">
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                        <i class="material-icons">menu</i>
+                        <img class="img-menu"src="img/menu2.png" alt="">
                     </a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="#"><img class="img-social_1" src="img/facebook.svg" alt=""></a></li>
@@ -34,12 +35,26 @@
                 </div>
             </nav>
         </div>
-            <ul class="sidenav" id="mobile-demo">
-                <li><a class="sidenav-close pointer">X</a></li>
-                <li><a href="sass.html"><img class="img-social_1" src="img/facebook.svg" alt="">face</a></li>
-                <li><a href="badges.html"><img class="img-social_2" src="img/twitter.svg" alt="">twitter</a></li>
-                <li><a href="collapsible.html"><img class="img-social_2" src="img/instagram.svg" alt="">instagra</a></li>
-            </ul>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="#">
+                    <img class="img-social_1 mt-1" src="img/facebook-blue.svg" alt="">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="img-social_2 mt-1" src="img/twitter-blue.svg" alt="">
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="img-social_2 mt-1" src="img/instagram-blue.svg" alt="">
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
         </div>
         
         <div class="content-section1 mt-1">
@@ -94,24 +109,6 @@
     <script type="text/javascript" src="node_modules/scroll-out/dist/scroll-out.min.js"></script>
     <script type="text/javascript" src="js/rellax.min.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     $('.menu-bar').click(function () {
-        //         $('.sub-menu').slideToggle("swing");
-        //     });
-        //     $('#close').click(function () {
-        //         $('.sub-menu').slideToggle("swing");
-        //     });
-        // });
-
-    /* $(document).ready(function(){
-        $(window).scroll(function(){
-            if($(window).scrollTop()>-10) {
-                $('nav').addClass('.nav-bar_color');
-            } else {
-                $('nav').removeClass('.nav-bar_color');
-            }
-        });
-    }); */
     //NAVBAR SCROLL
     $(document).ready(function(){
         $(window).bind('scroll', function() {
