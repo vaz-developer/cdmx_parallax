@@ -303,17 +303,41 @@ body {
 .card-section figure .lan-1 {
   margin: -11.875% 0;
 }
-.card-section figure .lan-2 {
-  margin: -30.875% 0;
+.card-section figure .lan-1-1 {
+  margin: -32.875% 0;
 }
-.card-section figure .lan-3 {
-  margin: -40.875% 0;
+.card-section figure .lan-1-2 {
+  margin: -36.875% 0;
 }
-.card-section figure .lan-4 {
+.card-section figure .lan-1-3 {
   margin: -44.875% 0;
 }
-.card-section figure .lan-5 {
+.card-section figure .lan-1-4 {
   margin: -17.875% 0;
+}
+.card-section figure .lan-2 {
+  margin: -63.875% 0;
+}
+.card-section figure .lan-2-1 {
+  margin: -24.875% 0;
+}
+.card-section figure .lan-2-2 {
+  margin: -40.875% 0;
+}
+.card-section figure .lan-3 {
+  margin: -52.875% 0;
+}
+.card-section figure .lan-3-1 {
+  margin: -26.875% 0;
+}
+.card-section figure .lan-3-2 {
+  margin: -6.875% 0;
+}
+.card-section figure .lan-3-3 {
+  margin: -3.875% 0;
+}
+.card-section figure .lan-4 {
+  margin: -2.875% 0;
 }
 .card-section .bread {
   margin: auto 3rem;
