@@ -413,16 +413,16 @@ body {
 
   .sky-bg {
     top: 0;
-    height: 500px;
+    height: 450px;
   }
 
   .palace {
-    top: 29rem;
+    top: 27rem;
     z-index: 2;
   }
 
   .mount {
-    top: 41em;
+    top: 37rem;
     z-index: 1;
   }
 
