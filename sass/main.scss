@@ -16,7 +16,7 @@ body{
 .white-color {
     color: #ffffff;
 }
-#button2 {
+.float-btn {
     display: inline-block;
     background-color: #FF9800;
     width: 50px;
@@ -32,24 +32,17 @@ body{
     visibility: hidden;
     z-index: 1000;
 }
-#button2::after {
-    content: "\8593";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-}
-#button2:hover {
+.float-btn:hover {
     cursor: pointer;
-    background-color: #333;
+    background-color: #434e60;
 }
-#button2:active {
-    background-color: #555;
-}
-#button2.show {
+.float-btn.show {
     opacity: 1;
     visibility: visible;
+}
+.float-btn_arrow {
+    color: #ffffff;
+	margin-top:10px;
 }
 .mt-1 {
     margin-top: 1rem;
@@ -176,6 +169,9 @@ body{
 }
 .img-social_2 {
     width:30px;
+}
+.mt-content {
+    margin-top: 1rem;
 }
 .mount {
     position: absolute;
@@ -359,9 +355,6 @@ body{
 }
 /*MEDIA QUERIES*/
 @media (max-width: 768px) { 
-    .sky-bg {
-        top: 0;
-    }
     .button-section1 {
         z-index: 3;
     }
@@ -380,12 +373,19 @@ body{
         margin-top: 5em;
         z-index: 2;
     }
+    .mt-content {
+        margin-top: 7rem;
+    }
+    .sky-bg {
+        top: 0;
+        height: 500px;
+    }
     .palace {
-        top: 14rem;
+        top: 29rem;
         z-index: 2;
     }
     .mount {
-        top: 24em;
+        top: 41em;
         z-index: 1;
     }
     #section2 .text-intro {

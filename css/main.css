@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "ARESSENCE";
   src: url("../fonts/ARESSENCE.eot");
@@ -17,7 +16,7 @@ body {
   color: #ffffff;
 }
 
-#button2 {
+.float-btn {
   display: inline-block;
   background-color: #FF9800;
   width: 50px;
@@ -33,27 +32,19 @@ body {
   z-index: 1000;
 }
 
-#button2::after {
-  content: "薓";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-
-#button2:hover {
+.float-btn:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color: #434e60;
 }
 
-#button2:active {
-  background-color: #555;
-}
-
-#button2.show {
+.float-btn.show {
   opacity: 1;
   visibility: visible;
+}
+
+.float-btn_arrow {
+  color: #ffffff;
+  margin-top: 10px;
 }
 
 .mt-1 {
@@ -199,6 +190,10 @@ body {
 
 .img-social_2 {
   width: 30px;
+}
+
+.mt-content {
+  margin-top: 1rem;
 }
 
 .mount {
@@ -389,10 +384,6 @@ body {
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
-  .sky-bg {
-    top: 0;
-  }
-
   .button-section1 {
     z-index: 3;
   }
@@ -416,13 +407,22 @@ body {
     z-index: 2;
   }
 
+  .mt-content {
+    margin-top: 7rem;
+  }
+
+  .sky-bg {
+    top: 0;
+    height: 500px;
+  }
+
   .palace {
-    top: 14rem;
+    top: 29rem;
     z-index: 2;
   }
 
   .mount {
-    top: 24em;
+    top: 41em;
     z-index: 1;
   }
 
